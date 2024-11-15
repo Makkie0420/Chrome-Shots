@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/watermark logo.png" type="image/x-icon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Chrome Shots™</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/img/logo.png" alt="">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#shop" class="nav__link">Shop</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact Us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#gallery" class="nav__link">Gallery</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div>
+                    <img src="assets/img/watermark logo.png" alt="" class="">
+                </div>
+
+                <div class="home__data">
+                    <div class="home__header">
+                        <h1 class="home__title">Chrome</h1>
+                        <h2 class="home__subtitle">Shots™</h2>
+                    </div>
+
+                    <div class="home__footer">
+                        <h3 class="home__title-description">Overview</h3>
+                        <p class="home__description">We've got something special for you and we can't wait for you to see it. Please check back soon.
+                        </p>
+                        <a href="#" class="button button--flex">
+                            <span class="button--flex">
+                                    <i class="r"></i></i> Contact Us
+                                </span>
+                            <span class="home__price"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="discount__gallery grid">
+            <div class="discount__gallery-item">
+                <img src="assets/img/gulong ng sir.png" alt="Gallery Image 1" class="discount__gallery-image">
+            </div>
+            <div class="discount__gallery-item">
+                <img src="assets/img/honda ef.png" alt="Gallery Image 2" class="discount__gallery-image">
+            </div>
+            <div class="discount__gallery-item">
+                <img src="assets/img/honda eg.png" alt="Gallery Image 3" class="discount__gallery-image">
+            </div>
+            <div class="discount__gallery-item">
+                <img src="assets/img/IMG_3491.JPG" alt="Gallery Image 4" class="discount__gallery-image">
+            </div>
+        </div>
+
+        <style>
+            .discount__gallery {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                /* 4 columns by default */
+                gap: 1rem;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 1200px;
+            }
+            
+            .discount__gallery-item {
+                overflow: hidden;
+                position: relative;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            
+            .discount__gallery-image {
+                width: 100%;
+                height: auto;
+                display: block;
+                transition: transform 0.3s ease, filter 0.3s ease;
+            }
+            
+            .discount__gallery-item:hover .discount__gallery-image {
+                transform: scale(1.05);
+                filter: brightness(0.8);
+            }
+            /* Responsive for smaller screens */
+            
+            @media screen and (max-width: 1024px) {
+                .discount__gallery {
+                    grid-template-columns: repeat(3, 1fr);
+                    /* 3 columns on tablets */
+                }
+            }
+            
+            @media screen and (max-width: 768px) {
+                .discount__gallery {
+                    grid-template-columns: repeat(2, 1fr);
+                    /* 2 columns on mobile */
+                }
+            }
+            
+            @media screen and (max-width: 480px) {
+                .discount__gallery {
+                    grid-template-columns: 1fr;
+                    /* 1 column on very small screens */
+                }
+            }
+        </style>
+
+
+        <!--=============== DISCOUNT ===============-->
+        <section class="discount section" id="shop">
+            <div class="discount__container container">
+                <!-- Discount Details -->
+                <div class="discount__animate">
+                    <h2 class="discount__title">Chrome Shots™<br>Drips</h2>
+                    <p class="discount__description">Get it now, up to 50% off.</p>
+                    <a href="#" class="button button--flex">
+                        <i class="ri-shopping-bag-line button__icon"></i> Shop Now
+                    </a>
+                </div>
+
+                <!-- Photo Gallery -->
+                <div class="discount__gallery grid">
+                    <div class="discount__gallery-item">
+                        <img src="assets/img/haha hoodie.jpeg" alt="Gallery Image 1" class="discount__gallery-image">
+                    </div>
+                    <div class="discount__gallery-item">
+                        <img src="assets/img/clothing na tangina.jpeg" alt="Gallery Image 2" class="discount__gallery-image">
+                    </div>
+                    <div class="discount__gallery-item">
+                        <img src="assets/img/Mock-It-AS Colour 4102 Women's Stencil Hood.jpeg" alt="Gallery Image 3" class="discount__gallery-image">
+                    </div>
+                    <div class="discount__gallery-item">
+                        <img src="assets/img/Mock-It-Champion T105 Heritage T-Shirt (1).jpeg" alt="Gallery Image 4" class="discount__gallery-image">
+                    </div>
+                    <div class="discount__gallery-item">
+                        <img src="assets/img/Mock-It-Champion T105 Heritage T-Shirt.jpeg" alt="Gallery Image 5" class="discount__gallery-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            /* General Section Styling */
+            
+            .discount {
+                padding: 2rem 1rem;
+                text-align: center;
+            }
+            
+            .discount__container {
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            
+            .discount__animate {
+                margin-bottom: 2rem;
+            }
+            
+            .discount__title {
+                font-size: 2rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            .discount__description {
+                font-size: 1rem;
+                color: #666;
+            }
+            
+            .button {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0.8rem 1.5rem;
+                background-color: #000000;
+                color: #fff;
+                border-radius: 5px;
+                text-decoration: none;
+            }
+            /* Gallery Styling */
+            
+            .discount__gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1.5rem;
+            }
+            
+            .discount__gallery-item {
+                overflow: hidden;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            
+            .discount__gallery-image {
+                width: 100%;
+                height: auto;
+                display: block;
+                transition: transform 0.3s ease, filter 0.3s ease;
+            }
+            
+            .discount__gallery-image:hover {
+                transform: scale(1.05);
+                filter: brightness(0.9);
+            }
+            /* Responsive Adjustments */
+            
+            @media screen and (max-width: 768px) {
+                .discount__title {
+                    font-size: 1.5rem;
+                }
+                .discount__description {
+                    font-size: 0.9rem;
+                }
+                .discount__gallery {
+                    gap: 1rem;
+                }
+            }
+        </style>
+
+
+
+
+        <!--=============== PRODUCTS ===============-->
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <a href="#" class="footer__logo">
+                    <img src="assets/img/watermark logo.png" alt="">
+                </a>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Products</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Clothing</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Photography</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Stickers</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Accesories</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Support</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Register</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Updates</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Provides</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content" id="contact">
+                    <form action="" class="footer__form">
+                        <input type="email" placeholder="Email" class="footer__input">
+                        <button class="button button--flex">
+                            <i class="ri-send-plane-line button__icon"></i> Subscribe
+                        </button>
+                    </form>
+
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/profile.php?id=61568614287625" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/chromeshts/" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer__copy">
+                <a href="" target="_blank" class="footer__copy-link">&#169; Chrome Shots™. All right reserved</a>
+            </p>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-s-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+</body>
+
+</html>
